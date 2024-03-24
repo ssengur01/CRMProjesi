@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRM Projesi</h1>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <a href="#" id="newLeadButton" class="button primary">New Lead</a>
+        <table id="leadTable">
+            <thead>
+                <tr>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Telefon</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="leadList">
+                <!-- Leadler burada listelenecek -->
+            </tbody>
+        </table>
+
+        <!-- Lead ekleme formu -->
+        <div id="leadFormContainer" style="display: none;">
+            <h2>New Lead</h2>
+            <form id="leadForm">
+                <label for="ad">Ad:</label>
+                <input type="text" id="ad" required><br>
+                <label for="soyad">Soyad:</label>
+                <input type="text" id="soyad" required><br>
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br>
+                <button type="submit" class="button primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
